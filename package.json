@@ -1,25 +1,39 @@
 {
   "name": "grugbot420",
-  "version": "4.2.0",
-  "description": "A simple bot built the grug way. Zero dependencies. Just works.",
-  "main": "index.js",
+  "version": "1.0.0",
+  "description": "🪨 AI-powered CLI assistant with zero dependencies. Simple commands, grug-brained responses.",
+  "main": "cli.ts",
   "bin": {
-    "grugbot420": "./index.js"
+    "grugbot420": "./cli.ts",
+    "grug": "./cli.ts"
   },
+  "type": "module",
   "scripts": {
-    "start": "node index.js",
-    "serve": "bun run server/index.ts",
-    "serve:dev": "bun --watch run server/index.ts"
+    "start": "bun run cli.ts",
+    "dev": "bun run cli.ts",
+    "server": "bun run server/index.ts"
   },
-  "keywords": ["bot", "cli", "grug", "simple", "zero-dependencies"],
+  "keywords": [
+    "cli",
+    "ai",
+    "grug",
+    "developer-tools",
+    "bun",
+    "zero-dependencies",
+    "terminal",
+    "assistant"
+  ],
   "author": "grug-group420",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/grug-group420/grugbot420"
+    "url": "https://github.com/grug-group420/grugbot420.git"
   },
   "homepage": "https://grug-group420.github.io/portal",
+  "bugs": {
+    "url": "https://github.com/grug-group420/grugbot420/issues"
+  },
   "engines": {
-    "node": ">=14.0.0"
+    "bun": ">=1.0.0"
   }
 }
