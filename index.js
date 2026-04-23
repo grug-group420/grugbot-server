@@ -169,6 +169,19 @@ Usage:
 🦴 Complexity is the enemy.`;
     },
 
+
+    about() {
+        return `🦴 grugbot420 v${this.version}
+A neuromorphic AI engine built the grug way.
+Zero dependencies. Just works.
+GitHub: https://github.com/grug-group420/grugbot420
+Portal: https://grug-group420.github.io/portal`;
+    },
+
+    version() {
+        return `grugbot420 v${this.version}`;
+    },
+
     // Process text commands (for CLI/chat)
     process(input) {
         const cmd = (input || '').toLowerCase().trim();
@@ -184,6 +197,8 @@ Usage:
             review: () => this.review(),
             standup: () => this.standup(),
             motivation: () => this.motivation(),
+            about: () => this.about(),
+            version: () => this.version(),
             help: () => this.help()
         };
         return commands[cmd] ? commands[cmd]() : this.help();

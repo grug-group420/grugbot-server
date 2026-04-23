@@ -116,12 +116,12 @@ const server = Bun.serve({
       });
     }
     
-    // API: List all commands
+    // API: List all commands (dynamic from bot)
     if (path === '/api/commands') {
-      return json({
-        commands: ['help', 'wisdom', 'ship', 'think', 'debug', 'complexity', 'joke', 'coffee'],
-        version: grugbot.version
-      });
+      const commands = Object.keys(grugbot).filter(
+        k => typeof grugbot[k] === 'function' && !['random', 'process'].includes(k)
+      );
+      return json({ commands, version: grugbot.version });
     }
     
     // Serve portal
