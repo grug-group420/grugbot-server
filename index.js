@@ -29,7 +29,14 @@ const grugbot = {
         "If function need many argument, maybe do too much.",
         "Grug not mass diff. Grug small diff many time.",
         "Framework come and go. Vanilla stay forever.",
-        "Meeting could have been a commit message."
+        "Meeting could have been a commit message.",
+        "Big rewrite always mass fail. Small fix always win.",
+        "Grug no need microservice. Grug need one good server.",
+        "Comment lie. Code no lie. Trust code.",
+        "Best debugging tool is good night sleep.",
+        "If code need explanation, code too complex.",
+        "Grug prefer boring technology. Boring technology ship.",
+        "Todo comment is promise grug never keep."
     ],
 
     // Ship messages
